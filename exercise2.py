@@ -13,8 +13,19 @@ __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
 
+triangle = 3
+square = 4
+pentagon = 5
+hexagon = 6
+heptagon = 7
+octagon = 8
+nonagon = 9
+decagon = 10
+
 def name_that_shape():
     shape = raw_input("How many sides does your shape have?")
+
+
 
     """
     For a given number of sides in a regular polygon, returns the shape name
