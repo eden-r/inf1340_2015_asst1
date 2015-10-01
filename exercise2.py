@@ -23,7 +23,8 @@ nonagon = 9
 decagon = 10
 
 def name_that_shape():
-    shape = raw_input("How many sides does your shape have?")
+    shape = int(raw_input("How many sides does your shape have?"))
+
 
 
 
