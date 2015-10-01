@@ -17,15 +17,18 @@ def name_that_shape():
     """
     For a given number of sides in a regular polygon, returns the shape name
 
-    Inputs:
+    Inputs: 3, 4, 5, 6, 7, 8, 9, 10
 
-    Expected Outputs:
+    Expected Outputs: name of shape according to number entered
 
-    Errors:
+    Errors: entered something other than 3, 4, 5, 6, 7, 8, 9, 10
 
     """
 
     print("Error")
 
+# ask for number of sides
+# match number of sides to name of shape
+# print name of shape
 
 name_that_shape()
