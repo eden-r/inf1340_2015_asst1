@@ -14,6 +14,12 @@ __license__ = "MIT License"
 
 
 money = 1000.00
+shares = 2000
+commission = 0.13
+sale_price = 900.00
+purchase_price = 942.75
+
+
 
 # calculate money spent 2000 shares * $900.00 per share
 # store money spent
