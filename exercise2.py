@@ -28,8 +28,12 @@ def name_that_shape():
         print("triangle") #print the name of the shape
     if shape == square:
         print("square")
+    if shape >= 11:
+        print("Error.")
+    if shape <= 2:
+        print("Error.")
     else:
-        print("Error")
+        print("Error.")
 
 
     """
