@@ -26,22 +26,23 @@ def diagnose_car():
 
     """
 
-    question_one = "Is the car silent when you turn the key?"
-    question_two = "Are the battery terminals corroded?" # if Y to question 1
+    question_one = raw_input("Is the car silent when you turn the key?")
+
+    question_two = raw_input("Are the battery terminals corroded?") # if Y to question 1
     print("Clean terminals and try starting again.") # if Y to question 2
     print("Replace cables and try again.") #if N to question 2
 
-    question_three = "Does the car make a clicking noise?" # if N to question 1
+    question_three = raw_input("Does the car make a clicking noise?") # if N to question 1
 
     print("Replace the battery.") # if Y to question 3
 
-    question_four = "Does the car crank up but fail to start?" # if N to quesiton 3
+    question_four = raw_input("Does the car crank up but fail to start?") # if N to quesiton 3
 
     print("Check spark plug connection.") #if Y to question 4
 
-    question_five = "Does the engine start and then die?" # if N to question 4
+    question_five = raw_input("Does the engine start and then die?") # if N to question 4
 
-    question_six = "Does your car have fuel injection?" # if Y to question 5
+    question_six = raw_input("Does your car have fuel injection?") # if Y to question 5
 
     print("Your car is working.") # if N to question 5
 
