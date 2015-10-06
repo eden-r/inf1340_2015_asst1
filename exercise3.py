@@ -29,9 +29,10 @@ def diagnose_car():
     question_one = raw_input("Is the car silent when you turn the key?")
     if question_one == "y":
         question_two = raw_input("Are the battery terminals corroded?") # if Y to question 1
-    print("Clean terminals and try starting again.") # if Y to question 2
-    print("Replace cables and try again.") #if N to question 2
-
+        if question_two == "y":
+            print("Clean terminals and try starting again.") # if Y to question 2
+        if question_two == "n":
+            print("Replace cables and try again.") #if N to question 2
     if question_one == "n":
         question_three = raw_input("Does the car make a clicking noise?") # if N to question 1
 
