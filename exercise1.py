@@ -17,7 +17,7 @@ __license__ = "MIT License"
 
 # to do: add scenario to describe the test case.
 
-#Constants
+# Constants
 commission = 0.03
 shares = 2000
 sale_price = 900.00
@@ -36,9 +36,3 @@ end_money = money_earned_minus_commission - start_money
 
 # end money is the result of the first two transactions combined
 print (end_money)
-
-
-#placeholder
-money = ""
-
-print(money)
