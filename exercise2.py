@@ -13,17 +13,17 @@ __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
 
-triangle = 3
-square = 4
-pentagon = 5
-hexagon = 6
-heptagon = 7
-octagon = 8
-nonagon = 9
-decagon = 10
+triangle = "3"
+square = "4"
+pentagon = "5"
+hexagon = "6"
+heptagon = "7"
+octagon = "8"
+nonagon = "9"
+decagon = "10"
 
 def name_that_shape():
-    shape = int(raw_input("How many sides does your shape have?")) # ask for the number of sides
+    shape = str(raw_input("How many sides does your shape have?")) # ask for the number of sides
     if shape == triangle: #match the number of sides to the shape
         print("triangle") #print the name of the shape
     if shape == square:
@@ -44,7 +44,8 @@ def name_that_shape():
         print("Error.")
     if shape <= 2:
         print("Error.")
-
+    else:
+        print("Error.")
 
 
     """
