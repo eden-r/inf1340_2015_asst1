@@ -44,8 +44,7 @@ def name_that_shape():
         print("Error.")
     if shape <= 2:
         print("Error.")
-    else:
-        print("Error.")
+
 
 
     """
