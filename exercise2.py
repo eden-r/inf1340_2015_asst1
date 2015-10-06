@@ -23,7 +23,7 @@ nonagon = "9"
 decagon = "10"
 
 def name_that_shape():
-    shape = str(raw_input("How many sides does your shape have?")) # ask for the number of sides
+    shape = str(raw_input("How many sides does your shape have? (Please enter a number)")) # ask for the number of sides
     if shape == triangle: #match the number of sides to the shape
         print("triangle") #print the name of the shape
     if shape == square:
@@ -40,10 +40,6 @@ def name_that_shape():
         print("nonagon")
     if shape == decagon:
         print("decagon")
-    if shape >= 11:
-        print("Error.")
-    if shape <= 2:
-        print("Error.")
     else:
         print("Error.")
 
