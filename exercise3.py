@@ -45,13 +45,17 @@ def diagnose_car():
                 question_five = raw_input("Does the engine start and then die?") # if N to question 4
                 if question_five == "y":
                     question_six = raw_input("Does your car have fuel injection?") # if Y to question 5
+                    if question_six == "y":
+                        print("Check to ensure the choke is opening and closing.") #if Y to question 6
+                    if question_six == "n":
+                        print("Get it in for service.") # if N to question 6
                 if question_five == "n":
                     print("Your car is working.") # if N to question 5
 
-    print("Check to ensure the choke is opening and closing.") #if Y to question 6
-    print("Get it in for service.") # if N to question 6
-
-    print("Error.") # if something other than y or N is entered
+    if question_one != "y":
+        print("Error.") # if something other than y or N is entered
+    if question_one != "n":
+        print("Error.")
 
 
 
