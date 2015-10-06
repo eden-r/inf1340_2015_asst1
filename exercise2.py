@@ -28,6 +28,18 @@ def name_that_shape():
         print("triangle") #print the name of the shape
     if shape == square:
         print("square")
+    if shape == pentagon:
+        print("pentagon")
+    if shape == hexagon:
+        print("hexagon")
+    if shape == heptagon:
+        print("heptagon")
+    if shape == octagon:
+        print("octagon")
+    if shape == nonagon:
+        print("nonagon")
+    if shape == decagon:
+        print("decagon")
     if shape >= 11:
         print("Error.")
     if shape <= 2:
