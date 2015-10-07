@@ -53,25 +53,27 @@ def name_that_shape():
 
     """
 
-    shape = str(raw_input("How many sides does your shape have? (Please enter a number)")) # ask for the number of sides
-    if shape == triangle: #match the number of sides to the shape
-        print("triangle") #print the name of the shape
-    elif shape == square:
-        print("square")
-    elif shape == pentagon:
-        print("pentagon")
-    elif shape == hexagon:
-        print("hexagon")
-    elif shape == heptagon:
-        print("heptagon")
-    elif shape == octagon:
-        print("octagon")
-    elif shape == nonagon:
-        print("nonagon")
-    elif shape == decagon:
-        print("decagon")
+    shape_edges = str(raw_input("How many sides does your shape have? (Please enter a number)")) # ask for the number of sides
+    shape_text = "" #Initialize variable
+    if shape_edges == triangle: #match the number of sides to the shape
+        shape_text = "triangle" #store the name of the shape
+    elif shape_edges == square:
+        shape_text = "square"
+    elif shape_edges == pentagon:
+        shape_text = "pentagon"
+    elif shape_edges == hexagon:
+        shape_text = "hexagon"
+    elif shape_edges == heptagon:
+        shape_text = "heptagon"
+    elif shape_edges == octagon:
+        shape_text = "octagon"
+    elif shape_edges == nonagon:
+        shape_text = "nonagon"
+    elif shape_edges == decagon:
+        shape_text = "decagon"
     else:
-        print("Error. Your number was not between 3 and 10 inclusive.")
+        shape_text = "Error. Your number was not between 3 and 10 inclusive."
+    print(shape_text)
 
 
 name_that_shape()
