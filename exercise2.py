@@ -12,6 +12,25 @@ __email__ = "ses@drsusansim.org"
 __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
+# The Scenario
+# The user is prompted by the program with a question regarding the number of sides your shape has
+# The user enters a number between 3 and 10.
+# The program outputs a textual description of the shape with the number of sides specified by the user
+#   or "Error" if the number is not between 3 and 10.
+
+# Intended Program Prompt: How many sides does your shape have? (Please enter a number)
+# Actual Program Prompt: How many sides does your shape have? (Please enter a number)
+# Run1
+# Sample Program Input: 7
+# Sample Program Output Description: The name of the shape with the number of sides specified by the user.
+# Sample Intended Program Output: heptagon
+# Sample Actual Program Output: heptagon
+# Run2
+# Sample Program Input: 11
+# Sample Program Output Description: The name of the shape with the number of sides specified by the user.
+# Sample Intended Program Output: Error
+# Sample Actual Program Output: Error.
+
 
 triangle = "3"
 square = "4"
@@ -26,19 +45,19 @@ def name_that_shape():
     shape = str(raw_input("How many sides does your shape have? (Please enter a number)")) # ask for the number of sides
     if shape == triangle: #match the number of sides to the shape
         print("triangle") #print the name of the shape
-    if shape == square:
+    elif shape == square:
         print("square")
-    if shape == pentagon:
+    elif shape == pentagon:
         print("pentagon")
-    if shape == hexagon:
+    elif shape == hexagon:
         print("hexagon")
-    if shape == heptagon:
+    elif shape == heptagon:
         print("heptagon")
-    if shape == octagon:
+    elif shape == octagon:
         print("octagon")
-    if shape == nonagon:
+    elif shape == nonagon:
         print("nonagon")
-    if shape == decagon:
+    elif shape == decagon:
         print("decagon")
     else:
         print("Error.")
