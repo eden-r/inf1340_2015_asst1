@@ -28,8 +28,8 @@ __license__ = "MIT License"
 # Run2
 # Sample Program Input: 11
 # Sample Program Output Description: The name of the shape with the number of sides specified by the user.
-# Sample Intended Program Output: Error
-# Sample Actual Program Output: Error.
+# Sample Intended Program Output: Error. Your number was not between 3 and 10 inclusive.
+# Sample Actual Program Output: Error. Your number was not between 3 and 10 inclusive.
 
 
 triangle = "3"
@@ -60,7 +60,7 @@ def name_that_shape():
     elif shape == decagon:
         print("decagon")
     else:
-        print("Error.")
+        print("Error. Your number was not between 3 and 10 inclusive.")
 
 
     """
