@@ -12,10 +12,24 @@ __email__ = "ses@drsusansim.org"
 __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
-# to do: make assumptions explicit
-# for example, assumption that commission is paid on top of money spent on stock
+# The Scenario
+# Lakshmi buys 2000 shares at $900.00 per share (2000 * $900.00 = $1800000)
+# Lakshmi pays the stockbroker 3% commission of the buy price (0.03 * $1800000 = $54000)
+# Lakshmi spent a total of $1800000 + $54000 = $1854000
+# Lakshmi sells 2000 shares at $942.75 per share (2000 * $942.75 = $1885500)
+# Lakshmi pays the stockbroker 3% commission of the sell price (0.03 * $1885500 = $56565)
+# Lakshmi earned a total of $1885500 - $56565 = $1828935
+# Lakshmi's balance is earned - spent ($1828935 - $1854000 = -$25065); Lakshmi lost money
 
-# to do: add scenario to describe the test case.
+# Program Input: None
+# Program Output Description: Lakshmi's Balance after paying the stockbroker each time.
+# Program Output Description: Lakshmi's Balance after paying the stockbroker each time.
+# Intended Program Output:
+#   -1854000
+#   -25065
+# Actual Program Output:
+#   -1854000.0
+#   -25065.0
 
 # Constants
 commission = 0.03
