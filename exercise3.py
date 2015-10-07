@@ -20,16 +20,24 @@ __license__ = "MIT License"
 # Error if the user inputs something other than "y" or "n"
 
 
-# Intended Program Prompt: "Is your car silent when you turn the key?"
-# Actual Program Prompt: "Is your car silent when you turn the key?"
+# Intended Program Prompt: Is your car silent when you turn the key?
+# Actual Program Prompt: Is your car silent when you turn the key?
 # Run1
 # Sample Program Input: y
 # Sample Program Output Description: another question prompt / a statement
-# Sample Intended Program Output: "Are the battery terminals corroded?
-# Sample Actual Program Output: "Are the battery terminals corroded?
+# Sample Intended Program Output: Are the battery terminals corroded?
+# Sample Actual Program Output: Are the battery terminals corroded?
 # Sample Program Input; y
-# Sample Intended Program Output: "Clean terminals and try starting again."
-# Sample Actual Program Output: "Clean terminals and try starting again."
+# Sample Intended Program Output: Clean terminals and try starting again.
+# Sample Actual Program Output: Clean terminals and try starting again.
+# Run2
+# Sample Program Input: n
+# Sample Program Output Description: another question prompt / a statement
+# Sample Intended Program Output: Does the car make a clicking noise?
+# Sample Actual Program Output: Does the car make a clicking noise?
+# Sample Program Input; y
+# Sample Intended Program Output: Replace the battery
+# Sample Actual Program Output: Replace the battery.
 
 
 
