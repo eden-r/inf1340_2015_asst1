@@ -13,27 +13,37 @@ __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
 
+# The Scenario  (Test)
+# user is prompted to answer questions about their car troubles to diagonose the problem
+# the user inputs "y" or "n"
+# the user gets either another question prompt or a statement in response
+# Error if the user inputs something other than "y" or "n"
+
+
+# Intended Program Prompt: "Is your car silent when you turn the key?"
+# Actual Program Prompt: "Is your car silent when you turn the key?"
+# Run1
+# Sample Program Input: y
+# Sample Program Output Description: another question prompt / a statement
+# Sample Intended Program Output: "Are the battery terminals corroded?
+# Sample Actual Program Output: "Are the battery terminals corroded?
+# Sample Program Input; y
+# Sample Intended Program Output: "Clean terminals and try starting again."
+# Sample Actual Program Output: "Clean terminals and try starting again."
+
+
+
 def diagnose_car():
-    """
-    Interactively queries the user with yes/no questions to identify a
-    possible issue with a car.
-
-    Inputs: y, n
-
-    Expected Outputs: further questions, answers
-
-    Errors: input other than y, n
-
-    """
-
     question_one = raw_input("Is the car silent when you turn the key?")
     if question_one == "y":
         question_two = raw_input("Are the battery terminals corroded?") # if Y to question 1
         if question_two == "y":
             print("Clean terminals and try starting again.") # if Y to question 2
-        if question_two == "n":
+        elif question_two == "n":
             print("Replace cables and try again.") #if N to question 2
-    if question_one == "n":
+        else:
+            print("Error.")
+    elif question_one == "n":
         question_three = raw_input("Does the car make a clicking noise?") # if N to question 1
         if question_three == "y":
             print("Replace the battery.") # if Y to question 3
@@ -51,12 +61,8 @@ def diagnose_car():
                         print("Get it in for service.") # if N to question 6
                 if question_five == "n":
                     print("Your car is working.") # if N to question 5
-
-    if question_one != "y":
-        print("Error.") # if something other than y or N is entered
-    if question_one != "n":
+    else:
         print("Error.")
-
 
 
 
