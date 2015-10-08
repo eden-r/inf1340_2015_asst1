@@ -43,6 +43,7 @@ __license__ = "MIT License"
 
 def diagnose_car():
     question_one = raw_input("Is the car silent when you turn the key?")
+    error_message = "Error: please enter either 'y'' or 'n'."
     if question_one == "y":
         question_two = raw_input("Are the battery terminals corroded?") # if Y to question 1
         if question_two == "y":
@@ -50,7 +51,7 @@ def diagnose_car():
         elif question_two == "n":
             print("Replace cables and try again.") #if N to question 2
         else:
-            print("Error: please enter either 'y'' or 'n'.")
+            print(error_message)
     elif question_one == "n":
         question_three = raw_input("Does the car make a clicking noise?") # if N to question 1
         if question_three == "y":
@@ -68,17 +69,17 @@ def diagnose_car():
                     elif question_six == "n":
                         print("Get it in for service.") # if N to question 6
                     else:
-                        print("Error: please enter either 'y'' or 'n'.")
+                        print(error_message)
                 elif question_five == "n":
                     print("Your car is working.") # if N to question 5
                 else:
-                    print("Error: please enter either 'y'' or 'n'.")
+                    print(error_message)
             else:
-                print("Error: please enter either 'y'' or 'n'.")
+                print(error_message)
         else:
-            print("Error: please enter either 'y'' or 'n'.")
+            print(error_message)
     else:
-        print("Error: please enter either 'y'' or 'n'.")
+        print(error_message)
 
 
 
