@@ -52,8 +52,8 @@ __license__ = "MIT License"
 # Sample Intended Program Output: Does the car crank up but fail to start?
 # Sample Actual Program Output: Does the car crank up but fail to start?
 # Sample Program Input: Y
-# Sample Intended Program Output: Check spark plug connection.
-# Sample Actual Program Output: Check spark plug connection.
+# Sample Intended Program Output: Check spark plug connections.
+# Sample Actual Program Output: Check spark plug connections.
 # Run5 (NNNYY)
 # Sample Program Input: N
 # Sample Intended Program Output: Does the car make a clicking noise?
@@ -120,7 +120,7 @@ def diagnose_car():
         elif question_three == "N":
             question_four = raw_input("Does the car crank up but fail to start?") # if N to quesiton 3
             if question_four == yes_selection:
-                print("Check spark plug connection.") #if Y to question 4
+                print("Check spark plug connections.") #if Y to question 4
             elif question_four == "N":
                 question_five = raw_input("Does the engine start and then die?") # if N to question 4
                 if question_five == yes_selection:
@@ -132,4 +132,4 @@ def diagnose_car():
                 else:
                     print("Engine is not getting enough fuel. Clean fuel pump.") # if N to question 5
 
-diagnose_car()
+#diagnose_car()
