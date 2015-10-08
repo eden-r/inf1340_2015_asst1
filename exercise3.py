@@ -52,8 +52,8 @@ __license__ = "MIT License"
 # Sample Intended Program Output: Does the car crank up but fail to start?
 # Sample Actual Program Output: Does the car crank up but fail to start?
 # Sample Program Input: Y
-# Sample Intended Program Output: Check spark plug connection.
-# Sample Actual Program Output: Check spark plug connection.
+# Sample Intended Program Output: Check spark plug connections.
+# Sample Actual Program Output: Check spark plug connections.
 # Run5 (NNNYY)
 # Sample Program Input: N
 # Sample Intended Program Output: Does the car make a clicking noise?
@@ -132,10 +132,6 @@ def diagnose_car():
                     else:
                         print("Check to ensure the choke is opening and closing.") # if N to question 6
                 else:
-                    print("Error.")
-            else:
-                print("Error.")
-        else:
-            print("Error.")
-    else:
-        print("Error.")
+                    print("Engine is not getting enough fuel. Clean fuel pump.") # if N to question 5
+
+diagnose_car()
