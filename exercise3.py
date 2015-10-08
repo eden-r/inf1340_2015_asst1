@@ -15,42 +15,42 @@ __license__ = "MIT License"
 
 # The Scenario  (Test)
 # the user is prompted to answer questions about their car troubles to diagnose the problem
-# the user inputs "y" or "n"
+# the user inputs "Y" or "N"
 # the user gets either another question prompt or a statement in response
-# Error if the user inputs something other than "y" or "n"
+# Assumption: input must be valid (i.e. one of "Y", or "N").
 
 
 # Intended Program Prompt: Is your car silent when you turn the key?
 # Actual Program Prompt: Is your car silent when you turn the key?
 # Run1
-# Sample Program Input: y
+# Sample Program Input: Y
 # Sample Program Output Description: another question prompt / a statement
 # Sample Intended Program Output: Are the battery terminals corroded?
 # Sample Actual Program Output: Are the battery terminals corroded?
-# Sample Program Input; y
+# Sample Program Input: Y
 # Sample Intended Program Output: Clean terminals and try starting again.
 # Sample Actual Program Output: Clean terminals and try starting again.
 # Run2
-# Sample Program Input: n
+# Sample Program Input: N
 # Sample Intended Program Output: Does the car make a clicking noise?
 # Sample Actual Program Output: Does the car make a clicking noise?
-# Sample Program Input; y
+# Sample Program Input: Y
 # Sample Intended Program Output: Replace the battery
 # Sample Actual Program Output: Replace the battery.
 # Run3
-# Sample Program Input: n
+# Sample Program Input: N
 # Sample Intended Program Output: Does the car make a clicking noise?
 # Sample Actual Program Output: Does the car make a clicking noise?
-# Sample Program Input; n
+# Sample Program Input: N
 # Sample Intended Program Output: Does the car crank up but fail to start?
 # Sample Actual Program Output: Does the car crank up but fail to start?
-# Sample Program Input; n
+# Sample Program Input: N
 # Sample Intended Program Output: Does the engine start and then die?
 # Sample Actual Program Output: Does the engine start and then die?
-# Sample Program Input; y
+# Sample Program Input: Y
 # Sample Intended Program Output: Does your car have fuel injection?
 # Sample Actual Program Output: Does your car have fuel injection?
-# Sample Program Input; y
+# Sample Program Input: Y
 # Sample Intended Program Output: Check to ensure the choke is opening and closing.
 # Sample Actual Program Output: Check to ensure the choke is opening and closing.
 
@@ -58,43 +58,31 @@ __license__ = "MIT License"
 
 def diagnose_car():
     question_one = raw_input("Is the car silent when you turn the key?")
-    error_message = "Error: please enter either 'y'' or 'n'."
-    if question_one == "y":
+    yes_selection = "Y"
+    if question_one == yes_selection:
         question_two = raw_input("Are the battery terminals corroded?") # if Y to question 1
-        if question_two == "y":
+        if question_two == yes_selection:
             print("Clean terminals and try starting again.") # if Y to question 2
-        elif question_two == "n":
+        else:
             print("Replace cables and try again.") #if N to question 2
-        else:
-            print(error_message)
-    elif question_one == "n":
-        question_three = raw_input("Does the car make a clicking noise?") # if N to question 1
-        if question_three == "y":
-            print("Replace the battery.") # if Y to question 3
-        elif question_three == "n":
-            question_four = raw_input("Does the car crank up but fail to start?") # if N to quesiton 3
-            if question_four == "y":
-                print("Check spark plug connection.") #if Y to question 4
-            elif question_four == "n":
-                question_five = raw_input("Does the engine start and then die?") # if N to question 4
-                if question_five == "y":
-                    question_six = raw_input("Does your car have fuel injection?") # if Y to question 5
-                    if question_six == "y":
-                        print("Check to ensure the choke is opening and closing.") #if Y to question 6
-                    elif question_six == "n":
-                        print("Get it in for service.") # if N to question 6
-                    else:
-                        print(error_message)
-                elif question_five == "n":
-                    print("Engine is not getting enough fuel. Clean fuel pump.") # if N to question 5
-                else:
-                    print(error_message)
-            else:
-                print(error_message)
-        else:
-            print(error_message)
     else:
-        print(error_message)
+        question_three = raw_input("Does the car make a clicking noise?") # if N to question 1
+        if question_three == yes_selection:
+            print("Replace the battery.") # if Y to question 3
+        else:
+            question_four = raw_input("Does the car crank up but fail to start?") # if N to quesiton 3
+            if question_four == yes_selection:
+                print("Check spark plug connection.") #if Y to question 4
+            else:
+                question_five = raw_input("Does the engine start and then die?") # if N to question 4
+                if question_five == yes_selection:
+                    question_six = raw_input("Does your car have fuel injection?") # if Y to question 5
+                    if question_six == yes_selection:
+                        print("Check to ensure the choke is opening and closing.") #if Y to question 6
+                    else:
+                        print("Get it in for service.") # if N to question 6
+                else:
+                    print("Engine is not getting enough fuel. Clean fuel pump.") # if N to question 5
 
 
 diagnose_car()
