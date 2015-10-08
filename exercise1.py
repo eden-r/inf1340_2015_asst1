@@ -23,7 +23,6 @@ __license__ = "MIT License"
 
 # Program Input: None
 # Program Output Description: Lakshmi's Balance after paying the stockbroker each time.
-# Program Output Description: Lakshmi's Balance after paying the stockbroker each time.
 # Intended Program Output:
 #   -1854000
 #   -25065
