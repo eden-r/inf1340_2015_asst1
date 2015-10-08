@@ -14,7 +14,7 @@ __license__ = "MIT License"
 
 
 # The Scenario  (Test)
-# user is prompted to answer questions about their car troubles to diagonose the problem
+# the user is prompted to answer questions about their car troubles to diagnose the problem
 # the user inputs "y" or "n"
 # the user gets either another question prompt or a statement in response
 # Error if the user inputs something other than "y" or "n"
