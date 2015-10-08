@@ -134,3 +134,5 @@ def diagnose_car():
                 else:
                     print("Engine is not getting enough fuel. Clean fuel pump.") # if N to question 5
 
+
+#diagnose_car()
