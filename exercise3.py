@@ -126,10 +126,11 @@ def diagnose_car():
                 if question_five == yes_selection:
                     question_six = raw_input("Does your car have fuel injection?") # if Y to question 5
                     if question_six == yes_selection:
-                         print("Get it in for service.") #if Y to question 6
+                        print("Get it in for service.") # if N to question 6
+                    elif question_one == "N":
+                        print("Check to ensure the choke is opening and closing.") #if Y to question 6
                     else:
-                        print("Check to ensure the choke is opening and closing.") # if N to question 6
+                        print("Error.")
                 else:
                     print("Engine is not getting enough fuel. Clean fuel pump.") # if N to question 5
 
-#diagnose_car()
