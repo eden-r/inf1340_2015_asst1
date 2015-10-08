@@ -32,12 +32,27 @@ __license__ = "MIT License"
 # Sample Actual Program Output: Clean terminals and try starting again.
 # Run2
 # Sample Program Input: n
-# Sample Program Output Description: another question prompt / a statement
 # Sample Intended Program Output: Does the car make a clicking noise?
 # Sample Actual Program Output: Does the car make a clicking noise?
 # Sample Program Input; y
 # Sample Intended Program Output: Replace the battery
 # Sample Actual Program Output: Replace the battery.
+# Run3
+# Sample Program Input: n
+# Sample Intended Program Output: Does the car make a clicking noise?
+# Sample Actual Program Output: Does the car make a clicking noise?
+# Sample Program Input; n
+# Sample Intended Program Output: Does the car crank up but fail to start?
+# Sample Actual Program Output: Does the car crank up but fail to start?
+# Sample Program Input; n
+# Sample Intended Program Output: Does the engine start and then die?
+# Sample Actual Program Output: Does the engine start and then die?
+# Sample Program Input; y
+# Sample Intended Program Output: Does your car have fuel injection?
+# Sample Actual Program Output: Does your car have fuel injection?
+# Sample Program Input; y
+# Sample Intended Program Output: Check to ensure the choke is opening and closing.
+# Sample Actual Program Output: Check to ensure the choke is opening and closing.
 
 
 
@@ -71,7 +86,7 @@ def diagnose_car():
                     else:
                         print(error_message)
                 elif question_five == "n":
-                    print("Your car is working.") # if N to question 5
+                    print("Engine is not getting enough fuel. Clean fuel pump.") # if N to question 5
                 else:
                     print(error_message)
             else:
@@ -80,7 +95,6 @@ def diagnose_car():
             print(error_message)
     else:
         print(error_message)
-
 
 
 diagnose_car()
