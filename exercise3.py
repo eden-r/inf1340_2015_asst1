@@ -74,15 +74,15 @@ def diagnose_car():
         elif question_three == "N":
             question_four = raw_input("Does the car crank up but fail to start?") # if N to quesiton 3
             if question_four == yes_selection:
-                print("Check spark plug connection.") #if Y to question 4
+                print("Check spark plug connections.") #if Y to question 4
             elif question_four == "N":
                 question_five = raw_input("Does the engine start and then die?") # if N to question 4
                 if question_five == yes_selection:
                     question_six = raw_input("Does your car have fuel injection?") # if Y to question 5
                     if question_six == yes_selection:
-                        print("Check to ensure the choke is opening and closing.") #if Y to question 6
+                        print("Get it in for service.") # if Y to question 6
                     elif question_one == "N":
-                        print("Get it in for service.") # if N to question 6
+                        print("Check to ensure the choke is opening and closing.") #if N to question 6
                     else:
                         print("Error.")
                 elif question_five == "N":
@@ -95,5 +95,3 @@ def diagnose_car():
             print("Error.")
     else:
         print("Error.")
-
-diagnose_car()
