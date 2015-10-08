@@ -18,6 +18,9 @@ __license__ = "MIT License"
 # The program outputs a textual description of the shape with the number of sides specified by the user
 #   or "Error" if the number is not between 3 and 10.
 
+# Assumption: input must be valid (i.e. one of 3, 4, 5, 6, 7, 8, 9, or 10).
+
+# Test Cases:
 # Intended Program Prompt: How many sides does your shape have? (Please enter a number)
 # Actual Program Prompt: How many sides does your shape have? (Please enter a number)
 
@@ -54,10 +57,6 @@ __license__ = "MIT License"
 # Sample Program Input: 10
 # Sample Intended Program Output: decagon
 # Sample Actual Program Output: decagon
-# Run9
-# Sample Program Input: 11
-# Sample Intended Program Output: Error. Your number was not between 3 and 10 inclusive.
-# Sample Actual Program Output: Error. Your number was not between 3 and 10 inclusive.
 
 
 triangle = "3"
@@ -99,8 +98,6 @@ def name_that_shape():
         shape_text = "nonagon"
     elif shape_edges == decagon:
         shape_text = "decagon"
-    else:
-        shape_text = "Error. Your number was not between 3 and 10 inclusive."
     print(shape_text)
 
 
