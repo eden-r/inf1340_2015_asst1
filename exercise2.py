@@ -99,8 +99,8 @@ def name_that_shape():
     elif shape_edges == decagon:
         shape_text = "decagon"
     else:
-        print("Error.")
+        shape_text = "Error."
     print(shape_text)
 
 
-name_that_shape()
+#name_that_shape()
