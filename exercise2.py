@@ -20,14 +20,42 @@ __license__ = "MIT License"
 
 # Intended Program Prompt: How many sides does your shape have? (Please enter a number)
 # Actual Program Prompt: How many sides does your shape have? (Please enter a number)
+
 # Run1
-# Sample Program Input: 7
+# Sample Program Input: 3
 # Sample Program Output Description: The name of the shape with the number of sides specified by the user.
+# Sample Intended Program Output: triangle
+# Sample Actual Program Output: triangle
+# Run2
+# Sample Program Input: 4
+# Sample Intended Program Output: square
+# Sample Actual Program Output: square
+# Run3
+# Sample Program Input: 5
+# Sample Intended Program Output: pentagon
+# Sample Actual Program Output: pentagon
+# Run4
+# Sample Program Input: 6
+# Sample Intended Program Output: hexagon
+# Sample Actual Program Output: hexagon
+# Run5
+# Sample Program Input: 7
 # Sample Intended Program Output: heptagon
 # Sample Actual Program Output: heptagon
-# Run2
+# Run6
+# Sample Program Input: 8
+# Sample Intended Program Output: octagon
+# Sample Actual Program Output: octagon
+# Run7
+# Sample Program Input: 9
+# Sample Intended Program Output: nonagon
+# Sample Actual Program Output: nonagon
+# Run8
+# Sample Program Input: 10
+# Sample Intended Program Output: decagon
+# Sample Actual Program Output: decagon
+# Run9
 # Sample Program Input: 11
-# Sample Program Output Description: The name of the shape with the number of sides specified by the user.
 # Sample Intended Program Output: Error. Your number was not between 3 and 10 inclusive.
 # Sample Actual Program Output: Error. Your number was not between 3 and 10 inclusive.
 
