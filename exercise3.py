@@ -109,17 +109,19 @@ def diagnose_car():
         question_two = raw_input("Are the battery terminals corroded?") # if Y to question 1
         if question_two == yes_selection:
             print("Clean terminals and try starting again.") # if Y to question 2
-        else:
+        elif question_two == "N":
             print("Replace cables and try again.") #if N to question 2
-    else:
+        else:
+            print("Error.")
+    elif question_one == "N":
         question_three = raw_input("Does the car make a clicking noise?") # if N to question 1
         if question_three == yes_selection:
             print("Replace the battery.") # if Y to question 3
-        else:
+        elif question_three == "N":
             question_four = raw_input("Does the car crank up but fail to start?") # if N to quesiton 3
             if question_four == yes_selection:
                 print("Check spark plug connection.") #if Y to question 4
-            else:
+            elif question_four == "N":
                 question_five = raw_input("Does the engine start and then die?") # if N to question 4
                 if question_five == yes_selection:
                     question_six = raw_input("Does your car have fuel injection?") # if Y to question 5
@@ -129,6 +131,5 @@ def diagnose_car():
                         print("Check to ensure the choke is opening and closing.") # if N to question 6
                 else:
                     print("Engine is not getting enough fuel. Clean fuel pump.") # if N to question 5
-
 
 diagnose_car()
