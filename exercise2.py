@@ -85,7 +85,7 @@ def name_that_shape():
     if shape_edges == triangle: #match the number of sides to the shape
         shape_text = "triangle" #store the name of the shape
     elif shape_edges == square:
-        shape_text = "square"
+        shape_text = "quadrilateral"
     elif shape_edges == pentagon:
         shape_text = "pentagon"
     elif shape_edges == hexagon:
@@ -99,8 +99,8 @@ def name_that_shape():
     elif shape_edges == decagon:
         shape_text = "decagon"
     else:
-        shape_text = "Error."
+        shape_text = "Error"
     print(shape_text)
 
 
-name_that_shape()
+
