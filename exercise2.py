@@ -31,8 +31,8 @@ __license__ = "MIT License"
 # Sample Actual Program Output: triangle
 # Run2
 # Sample Program Input: 4
-# Sample Intended Program Output: square
-# Sample Actual Program Output: square
+# Sample Intended Program Output: quadrilateral
+# Sample Actual Program Output: quadrilateral
 # Run3
 # Sample Program Input: 5
 # Sample Intended Program Output: pentagon
@@ -57,6 +57,15 @@ __license__ = "MIT License"
 # Sample Program Input: 10
 # Sample Intended Program Output: decagon
 # Sample Actual Program Output: decagon
+# Run9
+# Sample Program Input: 2
+# Sample Intended Program Output: Error
+# Sample Actual Program Output: Error
+# Run10
+# Sample Program Input: 11
+# Sample Intended Program Output: Error
+# Sample Actual Program Output: Error
+
 
 
 triangle = "3"
@@ -85,7 +94,7 @@ def name_that_shape():
     if shape_edges == triangle: #match the number of sides to the shape
         shape_text = "triangle" #store the name of the shape
     elif shape_edges == square:
-        shape_text = "square"
+        shape_text = "quadrilateral"
     elif shape_edges == pentagon:
         shape_text = "pentagon"
     elif shape_edges == hexagon:
@@ -99,7 +108,7 @@ def name_that_shape():
     elif shape_edges == decagon:
         shape_text = "decagon"
     else:
-        shape_text = "Error."
+        shape_text = "Error"
     print(shape_text)
 
 
