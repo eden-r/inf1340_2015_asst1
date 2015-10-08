@@ -22,7 +22,7 @@ __license__ = "MIT License"
 
 # Intended Program Prompt: Is your car silent when you turn the key?
 # Actual Program Prompt: Is your car silent when you turn the key?
-# Run1
+# Run1 (YY)
 # Sample Program Input: Y
 # Sample Program Output Description: another question prompt / a statement
 # Sample Intended Program Output: Are the battery terminals corroded?
@@ -30,14 +30,31 @@ __license__ = "MIT License"
 # Sample Program Input: Y
 # Sample Intended Program Output: Clean terminals and try starting again.
 # Sample Actual Program Output: Clean terminals and try starting again.
-# Run2
+# Run2 (YN)
+# Sample Program Input: Y
+# Sample Intended Program Output: Are the battery terminals corroded?
+# Sample Actual Program Output: Are the battery terminals corroded?
+# Sample Program Input: N
+# Sample Intended Program Output: Replace cables and try again.
+# Sample Actual Program Output: Replace cables and try again.
+# Run3 (NY)
 # Sample Program Input: N
 # Sample Intended Program Output: Does the car make a clicking noise?
 # Sample Actual Program Output: Does the car make a clicking noise?
 # Sample Program Input: Y
 # Sample Intended Program Output: Replace the battery
 # Sample Actual Program Output: Replace the battery.
-# Run3
+# Run4 (NNY)
+# Sample Program Input: N
+# Sample Intended Program Output: Does the car make a clicking noise?
+# Sample Actual Program Output: Does the car make a clicking noise?
+# Sample Program Input: N
+# Sample Intended Program Output: Does the car crank up but fail to start?
+# Sample Actual Program Output: Does the car crank up but fail to start?
+# Sample Program Input: Y
+# Sample Intended Program Output: Check spark plug connection.
+# Sample Actual Program Output: Check spark plug connection.
+# Run5 (NNNYY)
 # Sample Program Input: N
 # Sample Intended Program Output: Does the car make a clicking noise?
 # Sample Actual Program Output: Does the car make a clicking noise?
@@ -51,8 +68,37 @@ __license__ = "MIT License"
 # Sample Intended Program Output: Does your car have fuel injection?
 # Sample Actual Program Output: Does your car have fuel injection?
 # Sample Program Input: Y
+# Sample Intended Program Output: Get it in for service.
+# Sample Actual Program Output: Get it in for service.
+# Run6 (NNNYN)
+# Sample Program Input: N
+# Sample Intended Program Output: Does the car make a clicking noise?
+# Sample Actual Program Output: Does the car make a clicking noise?
+# Sample Program Input: N
+# Sample Intended Program Output: Does the car crank up but fail to start?
+# Sample Actual Program Output: Does the car crank up but fail to start?
+# Sample Program Input: N
+# Sample Intended Program Output: Does the engine start and then die?
+# Sample Actual Program Output: Does the engine start and then die?
+# Sample Program Input: Y
+# Sample Intended Program Output: Does your car have fuel injection?
+# Sample Actual Program Output: Does your car have fuel injection?
+# Sample Program Input: N
 # Sample Intended Program Output: Check to ensure the choke is opening and closing.
 # Sample Actual Program Output: Check to ensure the choke is opening and closing.
+# Run7 (NNNN)
+# Sample Program Input: N
+# Sample Intended Program Output: Does the car make a clicking noise?
+# Sample Actual Program Output: Does the car make a clicking noise?
+# Sample Program Input: N
+# Sample Intended Program Output: Does the car crank up but fail to start?
+# Sample Actual Program Output: Does the car crank up but fail to start?
+# Sample Program Input: N
+# Sample Intended Program Output: Does the engine start and then die?
+# Sample Actual Program Output: Does the engine start and then die?
+# Sample Program Input: N
+# Sample Intended Program Output: Engine is not getting enough fuel. Clean fuel pump.
+# Sample Actual Program Output: Engine is not getting enough fuel. Clean fuel pump.
 
 
 
@@ -78,9 +124,9 @@ def diagnose_car():
                 if question_five == yes_selection:
                     question_six = raw_input("Does your car have fuel injection?") # if Y to question 5
                     if question_six == yes_selection:
-                        print("Check to ensure the choke is opening and closing.") #if Y to question 6
+                         print("Get it in for service.") #if Y to question 6
                     else:
-                        print("Get it in for service.") # if N to question 6
+                        print("Check to ensure the choke is opening and closing.") # if N to question 6
                 else:
                     print("Engine is not getting enough fuel. Clean fuel pump.") # if N to question 5
 
