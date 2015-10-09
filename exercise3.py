@@ -103,36 +103,36 @@ __license__ = "MIT License"
 
 
 def diagnose_car():
-    question_one = raw_input("Is the car silent when you turn the key?")
-    yes_selection = "Y"
-    if question_one == yes_selection:
-        question_two = raw_input("Are the battery terminals corroded?") # if Y to question 1
+    question_one = raw_input("Is the car silent when you turn the key?")  # present diagnostic question
+    yes_selection = "Y"  # get user input : "Y" or "N"
+    if question_one == "Y":  # match user input to appropriate response
+        question_two = raw_input("Are the battery terminals corroded?")  # respond with questions or diagnosis
         if question_two == yes_selection:
-            print("Clean terminals and try starting again.") # if Y to question 2
+            print("Clean terminals and try starting again.")
         elif question_two == "N":
-            print("Replace cables and try again.") #if N to question 2
+            print("Replace cables and try again.")
         else:
-            print("Error.")
+            print("Error.")  # return an error message where input is invalid
     elif question_one == "N":
-        question_three = raw_input("Does the car make a clicking noise?") # if N to question 1
+        question_three = raw_input("Does the car make a clicking noise?")
         if question_three == yes_selection:
-            print("Replace the battery.") # if Y to question 3
+            print("Replace the battery.")
         elif question_three == "N":
-            question_four = raw_input("Does the car crank up but fail to start?") # if N to quesiton 3
+            question_four = raw_input("Does the car crank up but fail to start?")
             if question_four == yes_selection:
-                print("Check spark plug connections.") #if Y to question 4
+                print("Check spark plug connections.")
             elif question_four == "N":
-                question_five = raw_input("Does the engine start and then die?") # if N to question 4
+                question_five = raw_input("Does the engine start and then die?")
                 if question_five == yes_selection:
-                    question_six = raw_input("Does your car have fuel injection?") # if Y to question 5
+                    question_six = raw_input("Does your car have fuel injection?")
                     if question_six == yes_selection:
-                        print("Get it in for service.") # if N to question 6
+                        print("Get it in for service.")
                     elif question_one == "N":
-                        print("Check to ensure the choke is opening and closing.") #if Y to question 6
+                        print("Check to ensure the choke is opening and closing.")
                     else:
                         print("Error.")
                 else:
-                    print("Engine is not getting enough fuel. Clean fuel pump.") # if N to question 5
+                    print("Engine is not getting enough fuel. Clean fuel pump.")
 
 
-#diagnose_car()
+# diagnose_car()
