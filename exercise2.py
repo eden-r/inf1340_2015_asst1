@@ -78,21 +78,10 @@ nonagon = "9"
 decagon = "10"
 
 def name_that_shape():
-    """
-    For a given number of sides in a regular polygon, returns the shape name
-
-    Inputs: 3, 4, 5, 6, 7, 8, 9, 10
-
-    Expected Outputs: name of shape according to number entered
-
-    Errors: entered something other than 3, 4, 5, 6, 7, 8, 9, 10
-
-    """
-
     shape_edges = str(raw_input("How many sides does your shape have? (Please enter a number)")) # ask for the number of sides
-    shape_text = "" #Initialize variable
-    if shape_edges == triangle: #match the number of sides to the shape
-        shape_text = "triangle" #store the name of the shape
+    shape_text = ""  # Initialize variable
+    if shape_edges == triangle:  # match the number of sides to the shape
+        shape_text = "triangle"  # store the name of the shape
     elif shape_edges == square:
         shape_text = "quadrilateral"
     elif shape_edges == pentagon:
@@ -112,4 +101,4 @@ def name_that_shape():
     print(shape_text)
 
 
-#name_that_shape()
+# name_that_shape()
