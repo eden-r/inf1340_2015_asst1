@@ -36,6 +36,7 @@ shares = 2000
 sale_price = 900.00
 sell_price = 942.75
 
+# calculations for transaction 1
 money_spent = shares * sale_price
 money_spent_plus_commission = money_spent + (money_spent * commission)
 start_money = money_spent_plus_commission
@@ -43,6 +44,7 @@ start_money = money_spent_plus_commission
 # this is negative because the cash balance of Lakshmi is negative after purchasing stock
 print(0 - money_spent_plus_commission)
 
+# Calculations for transaction 2
 money_earned = shares * sell_price
 money_earned_minus_commission = money_earned - (money_earned * commission)
 end_money = money_earned_minus_commission - start_money
